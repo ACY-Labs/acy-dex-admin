@@ -44,18 +44,18 @@ const Pool = props => {
 
   // project variables
   useEffect(async () => {
-    let result = await axios.get(`http://localhost:3001/bsc-test/api/applyForm/getForm`)
+    // let result = await axios.get(`http://localhost:3001/bsc-test/api/applyForm/getForm`)
     // console.log("result.data= ", result.data)
     // console.log("result= ", result)
-    const newPendingData = [];
-    result.data.forEach(obj => {
-      console.log("form=", obj);
-      newPendingData.push(obj)
-    });
-    console.log("pre pending project= ", newPendingData)
-    setPendingData([...newPendingData]);
-    console.log("pending data=", pendingData);
-    console.log("api url", API_URL())
+    // const newPendingData = [];
+    // result.data.forEach(obj => {
+    //   console.log("form=", obj);
+    //   newPendingData.push(obj)
+    // });
+    // console.log("pre pending project= ", newPendingData)
+    // setPendingData([...newPendingData]);
+    // console.log("pending data=", pendingData);
+    // console.log("api url", API_URL())
     getProjects(API_URL())
       .then(res => {
         if (res) {
