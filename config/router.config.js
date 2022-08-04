@@ -13,7 +13,7 @@ export default [
     component: '../layouts/BasicLayout',
     Routes: ['src/pages/Authorized'],
     routes: [
-      { path: '/', redirect: '/launchpad' },
+      { path: '/', redirect: '/launchmanager' },
       {
         path: '/launchpad',
         name: 'Launch',
